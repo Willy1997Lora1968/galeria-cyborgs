@@ -4,7 +4,7 @@ import Carousel from './Carousel';
 function App() {
     return (
         <div className="App">
-            <h1>Galería de Cíborgs</h1>
+            <h3>Galería de Cíborgs</h3>
             <Carousel />
         </div>
     );

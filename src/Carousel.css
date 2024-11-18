@@ -1,17 +1,19 @@
+/* Carousel.css */
 .carousel {
     position: relative;
     max-width: 100%;
     margin: auto;
     overflow: hidden;
+    text-align: center;
 }
+
 .carousel img {
     width: 100%;
-    display: none;
+    height: 100vh; /* Mantiene la altura de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
 }
-.carousel img.active {
-    display: block;
-}
-.prev, .next {
+
+.carousel .prev, .carousel .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -24,19 +26,60 @@
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
     border: none;
 }
-.next {
+
+.carousel .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+
+.carousel .prev:hover, .carousel .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
-@media (max-width: 768px) {
-    .prev, .next {
-        font-size: 14px;
+
+@media (max-width: 1024px) {
+    .carousel img {
+        height: 75vh; /* Ajusta la altura para pantallas más pequeñas */
+    }
+
+    .carousel .prev, .carousel .next {
+        font-size: 16px;
         padding: 12px;
     }
+}
+
+@media (max-width: 768px) {
+    .carousel img {
+        height: 65vh; /* Ajusta la altura para pantallas aún más pequeñas */
+    }
+
+    .carousel .prev, .carousel .next {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel img {
+        height: 55vh; /* Ajusta la altura para pantallas móviles */
+    }
+
+    .carousel .prev, .carousel .next {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+/* Encabezado y Descripción */
+.carousel-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.carousel-description {
+    font-size: 16px;
+    margin-top: 10px;
 }
