@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/galeria-cyborgs/static/css/main.59f5ab4f.css",
+    "main.js": "/galeria-cyborgs/static/js/main.cee38b15.js",
+    "static/js/453.8b36b1f2.chunk.js": "/galeria-cyborgs/static/js/453.8b36b1f2.chunk.js",
+    "index.html": "/galeria-cyborgs/index.html",
+    "main.59f5ab4f.css.map": "/galeria-cyborgs/static/css/main.59f5ab4f.css.map",
+    "main.cee38b15.js.map": "/galeria-cyborgs/static/js/main.cee38b15.js.map",
+    "453.8b36b1f2.chunk.js.map": "/galeria-cyborgs/static/js/453.8b36b1f2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.59f5ab4f.css",
+    "static/js/main.cee38b15.js"
+  ]
+}
